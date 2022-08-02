@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}" />
+    <title>checkout</title>
+  </head>
+  <body>
+    <div class="container wrapper">
+      <div class="row cart-head">
+        <div class="container">
+          <div class="row">
+            <p></p>
+          </div>
+          <div class="row" style="margin-bottom: 30px; margin-left: 5px">
+            <h1 style="font-weight: Bold; font-size: 40px">Detail Pembayaran</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row cart-body">
+        <form class="form-horizontal" method="post" action="">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
+            <!--REVIEW ORDER-->
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                Detail Pesanan
+                <div class="pull-right">
+                  <small><a class="afix-1" href="#">Edit Cart</a></small>
+                </div>
+              </div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <div class="col-sm-3 col-xs-3">
+                    <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <div class="col-xs-12">Product name</div>
+                    <div class="col-xs-12">
+                      <small>Quantity:<span>1</span></small>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-3 text-right">
+                    <h6><span>$</span>25.00</h6>
+                  </div>
+                </div>
+                <div class="form-group"><hr /></div>
+                <div class="form-group">
+                  <div class="col-sm-3 col-xs-3">
+                    <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <div class="col-xs-12">Product name</div>
+                    <div class="col-xs-12">
+                      <small>Quantity:<span>1</span></small>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-3 text-right">
+                    <h6><span>$</span>25.00</h6>
+                  </div>
+                </div>
+                <div class="form-group"><hr /></div>
+                <div class="form-group">
+                  <div class="col-sm-3 col-xs-3">
+                    <img class="img-responsive" src="//c1.staticflickr.com/1/466/19681864394_c332ae87df_t.jpg" />
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <div class="col-xs-12">Product name</div>
+                    <div class="col-xs-12">
+                      <small>Quantity:<span>2</span></small>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-3 text-right">
+                    <h6><span>$</span>50.00</h6>
+                  </div>
+                </div>
+                <div class="form-group"><hr /></div>
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <strong>Subtotal</strong>
+                    <div class="pull-right"><span>$</span><span>200.00</span></div>
+                  </div>
+                  <div class="col-xs-12">
+                    <small>Shipping</small>
+                    <div class="pull-right"><span>-</span></div>
+                  </div>
+                </div>
+                <div class="form-group"><hr /></div>
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <strong>Order Total</strong>
+                    <div class="pull-right"><span>$</span><span>150.00</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--REVIEW ORDER END-->
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-pull-6 col-sm-pull-6">
+            <!--SHIPPING METHOD-->
+            <div class="panel panel-primary">
+              <div class="panel-heading">Alamat</div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <h4>Alamat Pengiriman</h4>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Negara:</strong></div>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="country" value="" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-6 col-xs-12">
+                    <strong>Nama depan:</strong>
+                    <input type="text" name="first_name" class="form-control" value="" />
+                  </div>
+                  <div class="span1"></div>
+                  <div class="col-md-6 col-xs-12">
+                    <strong>Nama Belakang:</strong>
+                    <input type="text" name="last_name" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Alamat:</strong></div>
+                  <div class="col-md-12">
+                    <input type="text" name="address" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Kota:</strong></div>
+                  <div class="col-md-12">
+                    <input type="text" name="city" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Alamat detai (patokan/RT/RW):</strong></div>
+                  <div class="col-md-12">
+                    <input type="text" name="state" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Kode Pos:</strong></div>
+                  <div class="col-md-12">
+                    <input type="text" name="zip_code" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Nomer telfonr:</strong></div>
+                  <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Alamat Email:</strong></div>
+                  <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
+                </div>
+              </div>
+            </div>
+            <!--SHIPPING METHOD END-->
+            <!--CREDIT CART PAYMENT-->
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <span><i class="glyphicon glyphicon-lock"></i></span> Metode pembayaran
+              </div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Opsi Pembayaran:</strong></div>
+                  <div class="col-md-12">
+                    <select id="CreditCardType" name="CreditCardType" class="form-control">
+                      <option value="5">Bank Central Asia</option>
+                      <option value="6">Bank Rakyat Indonesia</option>
+                      <option value="7">Bank Negara Indonesia</option>
+                      <option value="8">Mandiri</option>
+                      <option value="9">Dana</option>
+                      <option value="10">OVO</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>No Rek/Handphone(Dana/OVO):</strong></div>
+                  <div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12"><strong>Card CVV:</strong></div>
+                  <div class="col-md-12"><input type="text" class="form-control" name="car_code" value="" /></div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <span>Pay secure using your credit card.</span>
+                  </div>
+                  <div class="col-md-12">
+                    <ul class="cards">
+                      <li class="visa hand">Visa</li>
+                      <li class="mastercard hand">MasterCard</li>
+                      <li class="amex hand">Amex</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <button type="submit" class="btn btn-primary btn-submit-fix">Place Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--CREDIT CART PAYMENT END-->
+          </div>
+        </form>
+      </div>
+      <div class="row cart-footer"></div>
+    </div>
+  </body>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</html>
+{%include 'footer.html'%}

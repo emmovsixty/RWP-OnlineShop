@@ -1,0 +1,3 @@
+[console_scripts]
+lib_path = lib_path.lib_path_cli:cli_main
+

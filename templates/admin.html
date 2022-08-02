@@ -1,0 +1,131 @@
+{%include'headeradmin.html'%}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Selamat datang {{session['nama_adm']}}</h1>
+        </div>
+        <!-- /.col -->
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-6" style="margin-left: 100px">
+          <!-- small box -->
+          <div class="small-box bg-info">
+            <div class="inner">
+              <h3>150</h3>
+
+              <p>Perlu dikirim</p>
+            </div>
+            <div class="icon"></div>
+            <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6 ml-5">
+          <!-- small box -->
+          <div class="small-box bg-success">
+            <div class="inner">
+              <h3>53</h3>
+
+              <p>Semua Produk</p>
+            </div>
+            <div class="icon"></div>
+            <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6 ml-5">
+          <!-- small box -->
+          <div class="small-box bg-warning">
+            <div class="inner">
+              <h3>44</h3>
+
+              <p>User Registrations</p>
+            </div>
+            <div class="icon"></div>
+            <a href="#" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <!-- ./col -->
+      </div>
+      <!-- /.row -->
+      <!-- Main row -->
+      <div class="row"></div>
+      <!-- /.row (main row) -->
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <section class="content mt-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <h4 class="m-0"><i class="ion ion-stats-bars"></i> Semua Produk</h4>
+                  <div class="col"><a href="{{'tambah_produk'}}" type="button" class="btn btn-primary btn-sm mt-1" style="float: right">Tambah Produk</a></div>
+                </div>
+              </div>
+              <table id="example2" class="table table-bordered table-hover mt-4">
+                <thead>
+                  <tr>
+                    <th>Gambar produk</th>
+                    <th>Kode produk</th>
+                    <th>Nama Produk</th>
+                    <th>Kategori Produk</th>
+                    <th>Merk</th>
+                    <th>jumlah</th>
+                    <th>Harga Produk</th>
+                    <th>Deskripsi</th>
+                    <th>aksi</th>
+                  </tr>
+                </thead>
+                <tbody style="overflow: scroll">
+                  {%for row in data%}
+                  <tr>
+                    <td><img src="{{url_for('static', filename='uploads/{{row.8}}')}}" style="height: 100px; width: 100px" /></td>
+                    <td>{{row.1}}</td>
+                    <td>{{row.2}}</td>
+                    <td>{{row.3}}</td>
+                    <td>{{row.4}}</td>
+                    <td>{{row.5}}</td>
+                    <td>Rp {{row.7}}</td>
+                    <td style="width: 25%">{{row.5}}</td>
+                    <td>
+                      <a class="btn btn-app"> <i class="fas fa-edit"></i> Edit </a>
+                    </td>
+                  </tr>
+                  {%endfor%}
+                </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+{%include'footeradmin.html'%}

@@ -1,0 +1,74 @@
+{%include'headeradmin.html'%}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Semua Produk</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Semua Produk</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- Main content -->
+  <section class="content" style="overflow: scroll">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Gambar produk</th>
+                    <th>Kode produk</th>
+                    <th>Kategori</th>
+                    <th>Nama Produk</th>
+                    <th>Harga Produk</th>
+                    <th>Variasi Produk</th>
+                    <th>Jumlah</th>
+                    <th>Deskripsi</th>
+                    <th>aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="{{url_for('static', filename='bola.jpg')}}" style="height: 100px; width: 100px" /></td>
+                    <td>Bola basket</td>
+                    <td>Bola</td>
+                    <td>113012I3012</td>
+                    <td>Rp 200.000</td>
+                    <td>hitam,merah,putih</td>
+                    <td>100</td>
+                    <td style="width: 25%">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, laboriosam?</td>
+                    <td>
+                      <a class="btn btn-app"> <i class="fas fa-edit"></i> Edit </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+{%include'footeradmin.html'%}
